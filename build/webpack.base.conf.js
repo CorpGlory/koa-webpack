@@ -24,7 +24,10 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin()
   ],
   resolve: {
-    extensions: [".ts", ".js"]
+    extensions: [".ts", ".js"],
+    alias: {
+      'any-promise': 'es6-promise'
+    }
   },
   module: {
     loaders: [
